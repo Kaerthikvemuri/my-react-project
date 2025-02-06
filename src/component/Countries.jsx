@@ -14,15 +14,14 @@ function Countries() {
     }
   )
  }
- ,[]
-)
+ ,[])
   return (
   <div className='container'>
       <h1>Countries</h1>
       <div className='d-flex flex-wrap'>
       <ul className='w-25'>
       {
-        countries.map((c)=>{
+        countries?.map((c)=>{
           return(<Link to={`countryDetails/${c.name.common}`} state={c}><li>{c.name.common}</li></Link>
           )
         })

@@ -15,10 +15,10 @@ function CountryDetails() {
         console.log(details)
     return (
         <div className='container'>
-            <h1>{x.cname}CountryDetails</h1>
-            <h1>{details.population}</h1>
-            <h1>{details.capital}</h1>
-             <img src={details[0].flags[0]} alt="" />
+            <h1>{x?.cname}CountryDetails</h1>
+            <h1>{details?.population}</h1>
+            <h1>{details?.capital}</h1>
+             <img src={details[0]?.flags[0]} alt="" />
             
     </div>
   )
